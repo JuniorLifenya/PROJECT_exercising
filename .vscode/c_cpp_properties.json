@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/Junior/OneDrive/Documents/MASTER I FYSIKK UIB!!!/Andre semester/Phys291/PROJECT_exercising/eigen-3.4.0/"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/MinGW/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

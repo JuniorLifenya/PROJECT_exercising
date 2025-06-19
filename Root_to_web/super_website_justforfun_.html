@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phys291 - Project : Anharmonic Oscillator</title>
+    <link
+      rel="shortcut icon"
+      type="img/png"
+      href="/Venturoimgs/Les logos/Zomi.jpg"
+    />
+    <link rel="stylesheet" href="/Root_to_web/super_web_justforfun.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo_content">
+        <img src="/Root_to_web/Logo-Uib.jpg" />
+        <h1 class="projtitle">Phys291-Project: Anharmonic Oscillator</h1>
+      </div>
+    </header>
+
+    <!--Main content, from here on out everything is devided into floors so header,main,intro,first,second,third,..,main,footer-->
+    <main>
+      <!--Intro floor-->
+      <div class="intromain">
+        <h1>Welcome!</h1>
+        <button
+          class="intromain_button"
+          onclick="document.getElementById('id01').style.display='block'"
+        >
+          Project description
+        </button>
+      </div>
+
+      <h1>First we look at plot outputs</h1>
+      <!--second_floor with sidbar-->
+      <div class="first">
+        <div class="first_sidebar1">
+          <img
+            class="first_sidebar1_eigenplot"
+            src="../OUTPUT/E_vs_eigenvalues_using_root.png"
+          />
+        </div>
+
+        <div class="first_sidebar2">
+          <div class="midbar1">
+            <p>
+              The first plot to the left here is the generated plot from the
+              code MAIN_CPP_CODES/E_vs_eigenvalues_using_root_plot.C for the
+              Energy( which is also the eigenvalue of the system), as a function
+              of lambda as the parameter we choose in a potential V(x) = ½mω²x²
+              + λx⁴. The code is executed by the following line: [root -l -b -q
+              MAIN_CPP_CODES/E_vs_eigenvalues_using_root_plot.C]. In the same
+              folder the code plot_wave_and_density.C generates the two plots
+              bellow. That code is run by a similar command: [root -l -b -q
+              MAIN_CPP_CODES/plot_wave_and_density.C ]
+            </p>
+          </div>
+
+          <div class="midbar2">
+            <img
+              class="first_sidebar2_probdense"
+              src="../OUTPUT/prob_densities_plot.png"
+            />
+            <img
+              class="first_sidebar2_psi"
+              src="../OUTPUT/wavefunctions_plot_fixed.png"
+            />
+          </div>
+        </div>
+      </div>
+      <h2>3D version of the plots</h2>
+      <!--Last_floor with 3 sidebars-->
+      <div class="second">
+        <div class="second_sidebarleft">
+          <img
+            class="second_sidebarleft_wignercombo"
+            src="../PHASE_SPACE_stuff/wigner_beautiful_combined.png"
+          />
+        </div>
+
+        <div class="second_sidebarright">
+          <img
+            class="second_sidebarright_wignercombo"
+            src="../PHASE_SPACE_stuff/Beautiful python wigner.png"
+          />
+        </div>
+      </div>
+
+      <h3>Computational outputs</h3>
+      <!--We cheat a bit and reuse the format of the second flor for our last floor hahaa -->
+      <div class="third">
+        <div class="third_sidebarleft">
+          <img class="third_sidebarleft_main" src="../OUTPUT/Main.png" />
+        </div>
+
+        <div class="third_sidebarright">
+          <!--Here we cheat also and reuse our format in css from the first floor haha-->
+          <img
+            class="third_sidebar2_energydat"
+            src="../OUTPUT/energies_dat.png"
+          />
+          &nbsp; Data from energi.dat file
+          <img class="third_sidebar2_psidat" src="../OUTPUT/wavefunc_dat.png" />
+          <p>&nbsp; Data from wavefunc.dat file</p>
+          &nbsp;
+        </div>
+      </div>
+      <button
+        class="report_button"
+        onclick="document.getElementById('id02').style.display='block'"
+      >
+        Project REPORT
+      </button>
+    </main>
+
+    <!--Footer content-->
+    <footer>
+      <p class="footer-text">@Copyright 2025 hope you liked My Website :)</p>
+    </footer>
+  </body>
+  <!-- Some javascript for the button-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var modal = document.getElementById("id01");
+      var closeBtn = document.querySelector(".close");
+
+      if (closeBtn) {
+        closeBtn.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+      }
+    });
+  </script>
+  <!--Description format-->
+  <div id="id01" class="modal">
+    <form class="modal-content" action="/action_page.php">
+      <span class="close">&times;</span>
+      <h1 class="contenth1">Description</h1>
+      <div class="content_container">
+        <p class="fill_in_text">
+          ! Ikke alt som står i beskrivelsen ble fullført !
+        </p>
+
+        <hr />
+        <label>
+          <b>
+            1) Starte med Anharmonisk Osc som [V(x)= 1/2 (mw^2)(x^2)+t(x^4)]:
+          </b>
+          <p>
+            - Implementere Runge-Kutta metode og kjøre en eigen-solvers med
+            varierende t i C++ . - Sammenligne med analytiske harmonic osc ( t=0
+            for eksempel ) - Plotte eigenvalues vs t med bruk av TGraph eller
+            TMultiGraph.
+          </p>
+        </label>
+
+        <label>
+          <b>
+            2) Visualisere 3-4 eigenfunksjoner med bruk av Root's TCanvas og
+             TGraph: (mw^2)(x^2)+t(x^4)]:
+          </b>
+          <p>
+            - Root macros plot: Spectrum ( E_n vs t ) , psi og prob density. -
+            Utvide til 2 coupled harmonic Osc ( altså inkludere kx1x2).
+          </p>
+        </label>
+
+        <label>
+          <b>3) Phase-space Analysis:</b>
+          <p>
+            - Compute Wigner distrb for valgte eigentilstander/ superposisjoner.
+            - Generere quantum Poincare sections for å identifisere signaturer
+            av nonlinear osc se mulig på chaos vs vanlige områder.
+          </p>
+        </label>
+
+        <label>
+          <b>4) Phase-space Analysis:</b>
+          <p>
+            - Utvikle en root GUI/Script som : Tar input for potential og
+            coupling parametere. Kjører eigen-solver og phase-space styrke.
+            Automatisk lager figurer/ plotter også. Jeg innser nå at oppgaven
+            ble litt for stor og ambisiøst, men det er fordi jeg skal starte å
+            skrive master-oppgave neste semester( phys339) og vil bruke dette
+            her for å få en god start. Så prosjektet mitt er motivert av
+            master-oppgaven og phys203 som jeg hadde forrige semester. Dette var
+            et vanskelig fag om teoretisk mekanikk , og i faget måtte jeg se på
+            bifurcation, chaos, continuouse mekanikk, hamiltonian og lagrangian
+            mekanikk. Beklager for en lang melding, men jeg har lyst til å
+            starte med engang og bli ferdig så fort som mulig.
+          </p>
+        </label>
+
+        <div class="clearfix">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Alright i understand !
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="id02" class="modal">
+    <form class="modal-content" action="/action_page.php">
+      <span class="close">&times;</span>
+      <h1 class="contenth1">Description</h1>
+      <div class="content_container">
+        <label>
+          <p>
+            To run the website type in "make" in WSL(Ubuntu for whindows ) or
+            root -q build_site.C ← executes ROOT. 1) MAIN_CPP_CODES folder, look
+            at the Hamiltonian_FDM_Build, then , Main , then plot_wave, then
+            E_vs_eigenvalues 2) PHASE_SPACE_stuff. Look at
+            wigner_calc_Ground_State_distribution, then , my_wigner, then wigner
+            3D_wigner.cpp, then 3D(python version if you want), ignore plot_wave
+            momentum_density.C 3) Look at MAIN_CPP_CODES folder / RUNGE-Kutta
+            files. I failed to use them, becuase it became complicated for
+            hamiltonian stuff. I tried some hard stuff with the Runge-Kutta, but
+            could not make it good/ beautiful :(. Wanted for eksempel to present
+            the time evolution of a wavefunction. But! i have included examples
+            for their use and outputs So everything is kind of working trough
+            the Main.cpp where it runs and solves for the eigenvalues(aka
+            energies) and vectors( aka wave functions). Then it saves
+            wavefunction and energies as .dat files so we can visuallly read the
+            values there. Plots are generated inside the OUTPUT folder where we
+            have the eigenvalues saved as a root file that can be used. I think
+            also that the eigenvalues in the output files can be used for this
+            plotting but idk how (maybe overthinking ) i mean i kind of did it
+            already with. It was hard to ACTUALLY use the runge kutta codes i
+            made (it was fun though ). I tried manny different approaches like
+            computing the TDSE and kind of plot each wave function probability
+            density for different times like snapshot. But that failed badly
+            Lastly the PHASE_SPACE folder is also super important. Here we dont
+            actually do the wigner distribution function(quasi), so we plot in
+            3D, also essentially you can integrate over the wigner function and
+            get out a desired probability density function depending on which
+            variable you are integrating with respect to ( x, or p). I failed to
+            automate stuff i think. But there is still some code that kind of
+            run smoothly as long as you know the compile and run commands. These
+            are all stored in the Executable_compiled_Binaries. Other codes are
+            stuff that i have tried and failed, etcc. I must say that i dont
+            remember and understand 100% of all my codes but a good amount of
+            them, also it was superfun to read and learn about cpp and its usage
+            I just did it my way which i hope is okey, because this is always
+            how i learn stuff in my life. Its way more fun for me
+            constructing,failing and trying again and again for countless hours
+            alone. Since this was so fun i will mostly use my summer to try to
+            really master c++ as far as i get. And i will try to rebuild this
+            whole project as a speedrun, because why not hahah. The webiste
+            stuff is just code i have from other websites i have made for fun
+            from before, dont pay too much attention to that code ( maybe look
+            at the structure ? is it good , bad ? give me feedback, i love to
+            level up ). Well with all that being said, this project is NOT
+            really special because i was so unsure all the time what i am TRYING
+            to do, so i ended up doing bunch of basic stuff like plotting the
+            wavefunc and prob density and comparwing wigen values with harmonic
+            version, well well. Hope you enjoid it , and that its enough.Sorry
+            for bad english also..i dont care too much about writing good/
+            proper report. Just wanted to finish something and have fun hahaha.
+          </p>
+        </label>
+
+        <div class="clearfix">
+          <button
+            type="button"
+            onclick="document.getElementById('id02').style.display='none'"
+            class="cancelbtn"
+          >
+            Okey bye!
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</html>

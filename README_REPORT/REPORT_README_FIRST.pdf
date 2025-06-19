@@ -1,0 +1,64 @@
+To run the websitemaking compile command: 
+./run_website.sh  ← executes ROOT, launches browser
+
+
+
+
+The following way to read / do the exercise and files handed. 
+
+1) MAIN_CPP_CODES folder. Look at the Hamiltonian_FDM_Build, then , Main , then plot_wave, then E_vs_eigenvalues
+2) PHASE_SPACE_stuff. Look at wigner_calc_Ground_State_distribution, then my_wigner, then wigner 3D_wigner.cpp, then 3D(python version if you want), ignore plot_wave momentum_density.C
+3) Look at MAIN_CPP_CODES folder / RUNGE-Kutta files. I failed to use them, becuase it became complicated for hamiltonian stuff. But i have included examples for their use and outputs 
+
+
+
+To run the website type in "make" in WSL(Ubuntu for whindows ) or
+            root -q build_site.C ← executes ROOT. 1) MAIN_CPP_CODES folder, look
+            at the Hamiltonian_FDM_Build, then , Main , then plot_wave, then
+            E_vs_eigenvalues 2) PHASE_SPACE_stuff. Look at
+            wigner_calc_Ground_State_distribution, then , my_wigner, then wigner
+            3D_wigner.cpp, then 3D(python version if you want), ignore plot_wave
+            momentum_density.C 3) Look at MAIN_CPP_CODES folder / RUNGE-Kutta
+            files. I failed to use them, becuase it became complicated for
+            hamiltonian stuff. I tried some hard stuff with the Runge-Kutta, but
+            could not make it good/ beautiful :(. Wanted for eksempel to present
+            the time evolution of a wavefunction. But! i have included examples
+            for their use and outputs So everything is kind of working trough
+            the Main.cpp where it runs and solves for the eigenvalues(aka
+            energies) and vectors( aka wave functions). Then it saves
+            wavefunction and energies as .dat files so we can visuallly read the
+            values there. Plots are generated inside the OUTPUT folder where we
+            have the eigenvalues saved as a root file that can be used. I think
+            also that the eigenvalues in the output files can be used for this
+            plotting but idk how (maybe overthinking ) i mean i kind of did it
+            already with. It was hard to ACTUALLY use the runge kutta codes i
+            made (it was fun though ). I tried manny different approaches like
+            computing the TDSE and kind of plot each wave function probability
+            density for different times like snapshot. But that failed badly
+            Lastly the PHASE_SPACE folder is also super important. Here we dont
+            actually do the wigner distribution function(quasi), so we plot in
+            3D, also essentially you can integrate over the wigner function and
+            get out a desired probability density function depending on which
+            variable you are integrating with respect to ( x, or p). I failed to
+            automate stuff i think. But there is still some code that kind of
+            run smoothly as long as you know the compile and run commands. These
+            are all stored in the Executable_compiled_Binaries. Other codes are
+            stuff that i have tried and failed, etcc. I must say that i dont
+            remember and understand 100% of all my codes but a good amount of
+            them, also it was superfun to read and learn about cpp and its usage
+            I just did it my way which i hope is okey, because this is always
+            how i learn stuff in my life. Its way more fun for me
+            constructing,failing and trying again and again for countless hours
+            alone. Since this was so fun i will mostly use my summer to try to
+            really master c++ as far as i get. And i will try to rebuild this
+            whole project as a speedrun, because why not hahah. The webiste
+            stuff is just code i have from other websites i have made for fun
+            from before, dont pay too much attention to that code ( maybe look
+            at the structure ? is it good , bad ? give me feedback, i love to
+            level up ). Well with all that being said, this project is NOT
+            really special because i was so unsure all the time what i am TRYING
+            to do, so i ended up doing bunch of basic stuff like plotting the
+            wavefunc and prob density and comparwing wigen values with harmonic
+            version, well well. Hope you enjoid it , and that its enough.Sorry
+            for bad english also..i dont care too much about writing good/
+            proper report. Just wanted to finish something and have fun hahaha.

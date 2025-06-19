@@ -1,0 +1,517 @@
+/*Kan bruke variabler slik*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/*Everything is devided into floors for better structure and understanding */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  height: 125px;
+  display: flex;
+  width: 100%;
+  max-width: auto; /* Match your site's max width */
+  margin: 0 auto; /* Center header */
+  padding: 0 20px; /* Add padding to avoid edge sticking */
+  position: relative; /* Keep your existing animation/bg styles */
+  animation: bg-animation 4s infinite alternate;
+  background: linear-gradient(45deg, rgb(47, 8, 66), rgb(0, 91, 107), rgb(59, 19, 19));
+  background-size: 400%;
+}
+.projtitle{ /*Here we have all the headlines before every floor if you get it */
+  color: white;
+  position:relative;
+  left:17%;
+}
+h1 {
+  position:relative;
+  top:0.3%;
+  left:35.5%;
+}
+h2 {
+  position:relative;
+  top:-0.1%;
+  left:40.5%;
+}
+h3 {
+  position:relative;
+  top:-0.2%;
+  left:42%;
+}
+@keyframes fallin {
+  from {
+    transform: translate(-20px, -20px);
+    opacity: 0.3;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fallin_invers {
+  from {
+    transform: translate(20px, -20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+main {
+  height: 2525px;
+  background-color: wheat;
+  background-position: bottom;
+  background-size: cover;
+  animation: pop_up 0.7s ease-in forwards;
+}
+@media (max-width: 800px) {
+  main {
+    /*If the page gets lower than 800px wide it changes flex direction*/
+    flex-direction: column;
+  }
+}
+
+@keyframes pop_up {
+  from {
+    transform: translate(-20px, 20px);
+    opacity: 0.3;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+footer {
+  margin-top:10px;
+  height: 100px;
+  animation: bg-animation 4s infinite alternate;
+  background: linear-gradient(45deg, rgb(47, 8, 66), rgb(0, 91, 107), rgb(59, 19, 19));
+  
+}
+
+.logo_content {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.logo_content img {
+  top: -1px;
+  left: 10%;
+  height: 90px;
+  position: relative;
+  margin-right: 48px;
+  animation: fallin 0.7s ease-in forwards;
+  border-radius:10px;
+  
+}
+
+.logo_content h1 {
+  color: whitesmoke;
+  font-family: Courier;
+}
+
+button[type=submit] {
+  width: 25%;
+  background-color: #4caf50;
+  color: black;
+  padding: 16px 22px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type=reset] {
+  width: 50%;
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.intromain {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 650px;
+  background-image: url(/Root_to_web/quantum-physics-touch.png);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+  width: 98%;
+  margin-left: 1%;
+  top: 1%;
+  margin-bottom: 20px;
+}
+.intromain_button {
+  padding: 14px 60px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  height: 100px;
+  opacity: 0.9;
+  position: relative;
+  top: 30%;
+  left: -10%;
+  font-size: 40px;
+  font-family: cursive;
+  border-radius: 20px;
+  box-shadow: 7px 7px 7px 5px black;
+  transition: transform 0.8s;
+  animation: bg-animation 4s infinite alternate;
+  background: linear-gradient(45deg, rgb(47, 8, 66), rgb(0, 91, 107), rgb(59, 19, 19));
+  background-size: 400%;
+  color: white;
+}
+.intromain_button:hover {
+  opacity: 0.5;
+  transform: translate(5px, -10px);
+}
+
+.intromain h1 {
+  top: 7%;
+  left: 19.4%;
+  font-size: 50px;
+  position: relative;
+  font-family: cursive;
+  color: white;
+}
+
+
+.first {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  height: 700px;
+  background-color: white;
+}
+.first_sidebar1 {
+  background-color:aquamarine;
+  width: 45%;
+  position: relative;
+  height: 680px;
+  margin-right: 10px;
+  top: 1%;
+  border-radius:10px;
+}
+.first_sidebar1_eigenplot{
+  width: 95%;
+  height: 95%;
+  position: relative;
+  top:2%;
+  left:3%;
+}
+.first_sidebar2 {
+  background-color: rgba(65, 65, 65, 0.176);
+  width: 52%;
+  position: relative;
+  height: 680px;
+  top: 1%;
+  border-radius:10px;
+}
+
+.midbar1 {
+  background-color: aquamarine;
+  height: 20%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.midbar2 {
+  background-color: aquamarine;
+  height: 75%;
+  border-radius: 8px;
+}
+.first_sidebar2_probdense{
+  width: 55%;
+  height: 48%;
+  position: relative;
+  top:2%;
+  left:3%;
+}
+.first_sidebar2_psi{
+  width: 65%;
+  height: 45%;
+  position: relative;
+  top:4%;
+  left:20%;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  height: 389px;
+  background-color: rgba(65, 65, 65, 0.176);
+  margin-bottom: 10px;
+}
+.second_sidebarleft, .second_sidebarright {
+  background-color: rgba(127, 219, 255, 0.906);
+  height: 95%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.second_sidebarleft {
+  width: 46%;
+  position:relative;
+  right:0.5%;
+  
+}
+.second_sidebarleft_wignercombo{
+  width: 98%;
+  height: 85%;
+  position: relative;
+  top: 6.5%;
+  left:1.7%;
+}
+
+.second_sidebarright {
+  width: 52%;
+  position: relative;
+  left:0.5;
+}
+.second_sidebarright_wignercombo{
+  width: 98%;
+  height: 95%;
+  position: relative;
+  top:2%;
+  left:1%;
+}
+.third {
+  display: flex;
+  justify-content: center;
+  height: 489px;
+  background-color: wheat;
+  margin-bottom: 20px;
+  background-color: rgba(65, 65, 65, 0.176);
+}
+.third_sidebarleft,.third_sidebarright{
+  background-color: rgba(127, 219, 255, 0.906);
+  height: 95%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.third_sidebarleft {
+  width: 46%;
+  position:relative;
+  right:0.5%;
+}
+.third_sidebarleft_main{
+  width: 98%;
+  height: 95%;
+  position: relative;
+  top:2%;
+  left:1%;
+}
+.third_sidebarright {
+  width: 52%;
+  position: relative;
+  left:0.5;
+
+}
+.third_sidebar2_energydat{
+  width: 55%;
+  height: 48%;
+  position: relative;
+  top:2%;
+  left:1%;
+}
+.third_sidebar2_psidat{
+  width: 65%;
+  height: 45%;
+  position: relative;
+  top:4%;
+  left:34%;
+}
+.report_button {
+  padding: 14px 60px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  height: 100px;
+  opacity: 0.9;
+  position: relative;
+  top: 0.5%;
+  left: 33%;
+  font-size: 40px;
+  font-family: cursive;
+  border-radius: 20px;
+  box-shadow: 7px 7px 7px 5px black;
+  transition: transform 0.8s;
+  animation: bg-animation 4s infinite alternate;
+  background: linear-gradient(45deg, rgb(47, 8, 66), rgb(0, 91, 107), rgb(59, 19, 19));
+  background-size: 400%;
+  color: white;
+}
+
+.prod {
+  border-radius: 8px;
+  margin-right: 20px;
+  border: 8px solid white;
+  height: 200px;
+  top: 24%;
+  left: 1%;
+  position: relative;
+  justify-content: center;
+  background-color: wheat;
+}
+
+.prod img {
+  height: 180px;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal-content {
+  position: relative;
+  bottom: 6.2%;
+}
+
+.cancelbtn {
+  background-color: #39f436;
+  border: none;
+  position: relative;
+  margin-top: 10px;
+  left: 40%;
+  height: 47px;
+  align-items: center;
+  width: 25%;
+  cursor: pointer;
+  border-radius:10px;
+}
+
+.cancelbtn:hover,
+.cancelbtn:focus {
+  color: rgb(202, 0, 0);
+}
+
+
+.content_container {
+  padding: 16px;
+  position: relative;
+}
+.fill_in_text {
+  position: relative;
+  left: 37.5%;
+  color: darkblue;
+}
+
+.terms_privacy_text {
+  color: darkblue;
+  position: relative;
+  left: 31%;
+}
+
+.remember-checkbox {
+  margin-bottom: 15px;
+}
+
+.terms-link {
+  color: dodgerblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.terms-link:hover {
+  color: #1e90ff;
+}
+
+.footer-text {
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 50px;
+  background-color: rgb(0, 0, 0); /*Color in the background while you are inside register*/
+  background-color: rgba(0, 0, 0, 0.55); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: wheat;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius:15px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close {
+  /*Close button(X) in the corner*/
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #5a3434;
+  cursor: pointer;
+}
+
+.modal-content h1 {
+  position: relative;
+  left: 43.2%;
+  width: 137px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  width: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*# sourceMappingURL=Vint1lineStyle.css.map */

@@ -1,0 +1,37 @@
+127.0.0.1 - - [18/Jun/2025 14:56:25] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jun/2025 14:56:25] code 404, message File not found
+127.0.0.1 - - [18/Jun/2025 14:56:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [18/Jun/2025 14:56:56] code 404, message File not found
+127.0.0.1 - - [18/Jun/2025 14:56:56] "GET /index_editable.html HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:28:41] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2025 17:28:41] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:28:41] "GET /OUTPUT/wavefunctions_plot_fixed.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:28:41] "GET /stylesheet.css HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2025 17:28:41] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:28:41] "GET /OUTPUT/prob_densities_plot.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:28:41] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:28:41] "GET /OUTPUT/wigner_3d_projections.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:28:42] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:28:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:28:54] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:28:54] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:28:54] "GET /OUTPUT/prob_densities_plot.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:28:54] "GET /OUTPUT/wavefunctions_plot_fixed.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:28:55] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:28:55] "GET /OUTPUT/wigner_3d_projections.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:29:51] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:29:51] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:29:51] "GET /OUTPUT/prob_densities_plot.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:29:51] "GET /OUTPUT/wavefunctions_plot_fixed.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:29:52] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:29:52] "GET /OUTPUT/wigner_3d_projections.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:30:25] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:30:25] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:30:25] "GET /OUTPUT/wavefunctions_plot_fixed.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:30:25] "GET /OUTPUT/prob_densities_plot.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 17:30:25] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 17:30:25] "GET /OUTPUT/wigner_3d_projections.png HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 21:28:11] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 21:28:11] "GET /Root_to_web/super_website_justforfun_.html HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 21:28:24] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 21:28:24] "GET /Root_to_web/super_website_justforfun_.html HTTP/1.1" 404 -
