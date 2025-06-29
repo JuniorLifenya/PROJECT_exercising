@@ -22,4 +22,28 @@ Kjører eigen-solver og phase-space styrke.
 Automatisk lager figurer/ plotter også.
 Jeg innser nå at oppgaven ble litt for stor og ambisiøst, men det er fordi jeg skal starte å skrive master-oppgave neste semester( phys339) og vil bruke dette her for å få en god start. 
 
-Så prosjektet mitt er motivert av master-oppgaven og phys203 som jeg hadde forrige semester. Dette var et vanskelig fag om teoretisk mekanikk , og i faget måtte jeg se på bifurcation, chaos,  continuouse mekanikk, hamiltonian og lagrangian mekanikk. Beklager for en lang melding, men jeg har lyst til å starte med engang og bli ferdig så fort som mulig. 
+Så prosjektet mitt er motivert av master-oppgaven og phys203 som jeg hadde forrige semester. 
+Dette var et vanskelig fag om teoretisk mekanikk , og i faget måtte jeg se på bifurcation, chaos,  continuouse mekanikk, hamiltonian og lagrangian mekanikk. 
+Beklager for en lang melding, men jeg har lyst til å starte med engang og bli ferdig så fort som mulig. 
+
+
+################################################################################################################################################################################################################################################################
+
+################################################################################################################################################################################################################################################################
+
+Now this project will become my weapon to get good internship hopefully microsft as it will connect with 
+my Master theisis and future reaserch goals : 
+
+1)  I will use this project to learn more about C++ and root programming.
+2)  I will use this project to learn more about numerical methods and programming.
+3)  I will use this project to learn more about quantum mechanics and theoretical physics.
+4)  I will use this project to learn more about machine learning and data analysis.
+5)  I will use this project to learn more about GUI programming and automation.
+6)  I will use this project to learn more about phase-space analysis and Wigner distribution.
+
+**Quantum Dynamics Simulator (C++)**
+- Engineered numerical solvers (RK4/FDM) for quantum Hamiltonians
+- Visualized quantum states via ROOT and web-based 3D plots
+- Extended with decoherence modeling for hardware-realistic simulations
+- Benchmarked against Python references (3x speedup for N=1000)
+- *Extensible*: GPU acceleration path, quantum sensing applications
