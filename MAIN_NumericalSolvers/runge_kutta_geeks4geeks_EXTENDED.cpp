@@ -63,3 +63,4 @@ int main()
 }
 // Expected output:
 // Scalar RK4: y(0.9) = -1261.5
+// Code execution CT_exercising/MAIN_NumericalSolvers$ g++ -std=c++11 -I eigen runge_kutta_geeks4geeks_EXTENDED.cpp -o lol, then type : ./lol

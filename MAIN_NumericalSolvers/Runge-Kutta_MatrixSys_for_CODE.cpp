@@ -85,3 +85,5 @@ void printVector(std::vector<double> &v)
 }
 
 // Source for this code is mainly a comprehensive youtube video, GeeksforGeeks and Stackoverflow.
+// Code execution here : g++ -std=c++11 -I eigen Runge-Kutta_MatrixSys_for_CODE.cpp -o lol output:
+//
