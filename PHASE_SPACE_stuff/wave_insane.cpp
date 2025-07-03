@@ -17,7 +17,7 @@
 #include <TLegend.h>
 #include <algorithm>
 
-void _3D_wigner_insane()
+void wave_insane()
 {
     // Open wavefunction file
     std::ifstream infile("OUTPUT/wavefunctions.dat");
@@ -149,5 +149,5 @@ void _3D_wigner_insane()
     leg->Draw();
 
     // Save combined plot
-    c1->SaveAs("PHASE_SPACE_stuff/wigner_beautiful_combined.png");
+    c1->SaveAs("PHASE_SPACE_stuff/wave_insane.png");
 }

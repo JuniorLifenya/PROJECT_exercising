@@ -56,5 +56,5 @@ ax2.grid(True)
 
 # Adjust layout and show
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-plt.savefig("PHASE_SPACE_stuff/Beautiful python wigner")
+plt.savefig("PHASE_SPACE_stuff/Beautiful_python_wave_stuff")
 plt.show()
