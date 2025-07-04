@@ -1,1 +1,0 @@
-// QHO system definition
