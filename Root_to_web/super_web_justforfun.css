@@ -30,18 +30,32 @@ header {
   color: white;
   position:relative;
   left:17%;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
 }
 h1 {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
   position:relative;
   top:0.3%;
   left:35.5%;
+  
 }
 h2 {
+    display: flex;
+  flex-direction: row;
+  width: 40%;
   position:relative;
   top:-0.1%;
   left:40.5%;
+  width: 40%;
 }
 h3 {
+    display: flex;
+  flex-direction: row;
+  width: 40%;
   position:relative;
   top:-0.2%;
   left:42%;
@@ -162,6 +176,18 @@ button[type=reset] {
   margin-left: 1%;
   top: 1%;
   margin-bottom: 20px;
+  box-shadow: 5px 5px 5px darkblue;
+  h1 {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  top: 7%;
+  left: 30.0%;
+  font-size: 50px;
+  position: relative;
+  font-family: cursive;
+  color: white;
+  }
 }
 .intromain_button {
   padding: 14px 60px;
@@ -173,7 +199,7 @@ button[type=reset] {
   opacity: 0.9;
   position: relative;
   top: 30%;
-  left: -10%;
+  right: 20.2%;
   font-size: 40px;
   font-family: cursive;
   border-radius: 20px;
@@ -189,14 +215,7 @@ button[type=reset] {
   transform: translate(5px, -10px);
 }
 
-.intromain h1 {
-  top: 7%;
-  left: 19.4%;
-  font-size: 50px;
-  position: relative;
-  font-family: cursive;
-  color: white;
-}
+  
 
 
 .first {
